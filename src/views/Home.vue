@@ -1,8 +1,6 @@
 <script setup>
 import { ShieldCheckIcon, QrCodeIcon } from '@heroicons/vue/24/outline'
 import { RouterLink } from 'vue-router';
-import Button from 'primevue/button';
-import Card from 'primevue/card';
 import router from '../router';
 import Header from '../components/Header.vue';
 import Hero from '../components/home/HeroSection.vue';

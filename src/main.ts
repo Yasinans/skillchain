@@ -5,8 +5,6 @@ import { useUserStore } from './stores/user';
 import { storeToRefs } from 'pinia';
 import './assets/styles/style.css'
 import App from './App.vue'
-import PrimeVue from 'primevue/config';
-import Aura from '@primeuix/themes/aura';
 import router from './router/index.ts';
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
@@ -34,11 +32,6 @@ router.beforeEach((to, _from, next) => {
         next()
     }
 })
-app.use(PrimeVue, {
-    theme: {
-        preset: Aura
-    }
-});
 app.use(router);
 app.use(pinia);
 app.mount('#app');
