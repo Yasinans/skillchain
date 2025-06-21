@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+
+  --color-button-primary: #e6902e;
+  --color-button-primary-hover: #e67f0af1;
+  --color-text-primary: #fac044;
+  --color-text-primary-hover: #f7d259;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+
+}
+
+.main-text {
+ color: #ffffff; 
+ background-image: linear-gradient(45deg, #f7e6cc , #ffffff 50%, #ffaa5a 100%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+}
+
+
+body {
+  margin: 0;
+  background-color:  #000000;
+}
+
