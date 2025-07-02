@@ -7,7 +7,8 @@ import Hero from '../components/home/HeroSection.vue';
 import FeatureSection from '../components/home/FeatureSection.vue';
 import HowItWorksSection from '../components/home/HiWSection.vue';
 import UseCasesSection from '../components/home/UseCasesSection.vue';
-
+import Button from 'primevue/button';
+import Card from 'primevue/card';
 </script>
 <template>
   <main>

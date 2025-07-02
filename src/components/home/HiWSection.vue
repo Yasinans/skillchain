@@ -98,7 +98,7 @@
           </div>
         </div>
         
-        <a class="group inline-flex items-center gap-x-2 py-3 px-6 bg-[#e6902e] hover:bg-[#e67f0af1] font-medium text-sm text-neutral-800 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#e6902e]/25 hover:scale-105 focus:outline-hidden" 
+        <a class="group inline-flex items-center gap-x-2 py-3 px-6 bg-[#e6902e] hover:bg-[#e67f0af1] font-medium text-sm text-white rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-[#e6902e]/25 hover:scale-105 focus:outline-hidden" 
            href="/register">
           Get Started
           <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

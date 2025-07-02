@@ -1,5 +1,13 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
+@theme {
+
+  --color-button-primary: #e6902e;
+  --color-button-primary-hover: #e67f0af1;
+  --color-text-primary: #fac044;
+  --color-text-primary-hover: #f7d259;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   scroll-behavior: smooth;

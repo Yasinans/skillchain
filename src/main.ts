@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia} from 'pinia'
+import PrimeVue from 'primevue/config';
+import Aura from '@primeuix/themes/aura';
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import { useUserStore } from './stores/user';
 import { storeToRefs } from 'pinia';
@@ -9,7 +11,11 @@ import router from './router/index.ts';
 const pinia = createPinia()
 pinia.use(piniaPluginPersistedstate)
 const app = createApp(App);
-
+app.use(PrimeVue, {
+    theme: {
+        preset: Aura
+    }
+});
 router.beforeEach((to, _from, next) => {
     const userStore = useUserStore();
     const { isRegistered, isIssuer } = storeToRefs(userStore);
