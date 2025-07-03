@@ -116,6 +116,7 @@ export const useIssuerCredentials = () => {
       const originalIssuedAt = new Date().toISOString();
       const credentialData = formatCredentialDataWithTimestamp(certificateUrl, originalIssuedAt);
       const tx = await issueCredential(formData.value.recipientAddr, credentialData);
+      console.log("Debug: ", credentialData);
       const nextCredentialId = await getNextCredentialId();
       if (tx) {
         await tx.wait();

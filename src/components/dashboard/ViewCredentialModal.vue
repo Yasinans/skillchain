@@ -115,7 +115,7 @@
                       <ArrowTopRightOnSquareIcon class="h-4 w-4 text-[#9b9182] ml-auto" />
                     </button>
 
-                    <button
+                    <button v-if="!isIssuer"
                       @click="shareCredential"
                       class="w-full bg-[#1f1d2c]/80 hover:bg-[#1f1d2c] border border-[#e6902e]/10 hover:border-[#e6902e]/30 rounded-lg p-3 text-left transition-all flex items-center gap-3"
                     >
@@ -339,7 +339,9 @@ import {
 } from '@heroicons/vue/24/outline';
 import { EXPLORER_BASE_URL } from '../../config';
 import { useToast } from '../../composables/useToast';
+import { useUserStore } from '../../stores/user';
 import type { Credential } from '../../types/credentials.type';
+import { storeToRefs } from 'pinia';
 
 const props = defineProps<{
   viewCredentialModal: {
@@ -349,6 +351,8 @@ const props = defineProps<{
   }
 }>();
 
+const userStore = useUserStore();
+const { isIssuer } = storeToRefs(userStore);
 const emit = defineEmits(['share-credential']);
 const { success: successToast, error } = useToast();
 
