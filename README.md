@@ -1,6 +1,7 @@
 # SkillChain
 
 A blockchain-based credential verification platform that enables secure issuance and verification of digital certificates using Web3 technology and decentralized storage.
+
 Demo: [https://skillchains.vercel.app/](https://skillchains.vercel.app/)
 
 ## Table of Contents
